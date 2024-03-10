@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+#gameboard {
+    text-align: center;
+    border: 2px solid #444;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#small {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#small:hover {
+    background-color: #45a049;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(8, 40px); /* Przykład dla siatki 8x8 */
+    grid-gap: 5px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.newFields {
+    width: 40px;
+    height: 40px;
+    background-color: #8fbc8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #333;
+    border: 1px solid #556b2f;
+    user-select: none;
+}
+
+.newFields.mina {
+    background-color: #ff6347;
+}
+
+.newFields.flag {
+    background-color: #1e90ff;
+}
